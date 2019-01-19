@@ -8,7 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath) as? UICollectionViewCell
+        //dequeueReusableCell(withIdentifier: "", for: indexPath) as? UICollectionViewCell
+        cell?.backgroundColor = UIColor.red
+        return cell!
+
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? UITableViewCell
+        cell?.backgroundColor = UIColor.blue
+        return cell!
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
