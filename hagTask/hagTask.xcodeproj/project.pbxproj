@@ -18,6 +18,7 @@
 		A154D45021F1DC4900314CB2 /* hagTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D44F21F1DC4900314CB2 /* hagTaskTests.swift */; };
 		A154D45B21F1DC4900314CB2 /* hagTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D45A21F1DC4900314CB2 /* hagTaskUITests.swift */; };
 		A1C1850B21F33DFB003AC051 /* DescriptionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1850A21F33DFB003AC051 /* DescriptionPageViewController.swift */; };
+		A1E015DD21F4B5A100B97F86 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E015DC21F4B5A100B97F86 /* ProductDetailsViewController.swift */; };
 		AD1717C67A5DB7D7C4D740BA /* Pods_hagTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8E6875AB5836A2662BD6D5 /* Pods_hagTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		A154D45A21F1DC4900314CB2 /* hagTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hagTaskUITests.swift; sourceTree = "<group>"; };
 		A154D45C21F1DC4900314CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C1850A21F33DFB003AC051 /* DescriptionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPageViewController.swift; sourceTree = "<group>"; };
+		A1E015DC21F4B5A100B97F86 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		B68FA4DF2C42DABEA572AAEB /* Pods-hagTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hagTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-hagTask/Pods-hagTask.release.xcconfig"; sourceTree = "<group>"; };
 		CE8E6875AB5836A2662BD6D5 /* Pods_hagTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hagTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D287F62863ACCA5D9B8B9430 /* Pods_hagTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hagTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				A154D43721F1DC4900314CB2 /* AppDelegate.swift */,
 				A154D43921F1DC4900314CB2 /* ViewController.swift */,
 				A1C1850A21F33DFB003AC051 /* DescriptionPageViewController.swift */,
+				A1E015DC21F4B5A100B97F86 /* ProductDetailsViewController.swift */,
 				A154D43B21F1DC4900314CB2 /* Main.storyboard */,
 				A154D44121F1DC4900314CB2 /* Assets.xcassets */,
 				A154D44321F1DC4900314CB2 /* LaunchScreen.storyboard */,
@@ -310,15 +313,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-hagTask/Pods-hagTask-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
 			);
@@ -332,15 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-hagTaskUITests-checkManifestLockResult.txt",
 			);
@@ -354,15 +349,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-hagTask-checkManifestLockResult.txt",
 			);
@@ -376,15 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-hagTaskTests-checkManifestLockResult.txt",
 			);
@@ -403,6 +390,7 @@
 				A154D43A21F1DC4900314CB2 /* ViewController.swift in Sources */,
 				A154D44021F1DC4900314CB2 /* hagTask.xcdatamodeld in Sources */,
 				A1C1850B21F33DFB003AC051 /* DescriptionPageViewController.swift in Sources */,
+				A1E015DD21F4B5A100B97F86 /* ProductDetailsViewController.swift in Sources */,
 				A154D43821F1DC4900314CB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

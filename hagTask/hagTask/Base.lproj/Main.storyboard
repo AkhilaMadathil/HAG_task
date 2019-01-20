@@ -295,11 +295,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="407"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="OJC-e2-Arh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1y1-Eb-e7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="980" y="76"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ebm-g5-VC4">
+            <objects>
+                <viewController storyboardIdentifier="vc1" id="v6s-4W-8MW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="swx-YS-6mG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.72263467393218728" blue="0.653116906036732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="MS2-WK-PnL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phz-Aw-EQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="690"/>
         </scene>
     </scenes>
 </document>
