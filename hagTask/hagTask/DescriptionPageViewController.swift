@@ -8,8 +8,11 @@
 
 import UIKit
 import Parchment
-
 class DescriptionPageViewController: UIViewController, PagingViewControllerDataSource  {
+    func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, pagingItemForIndex index: Int) -> T where T : PagingItem, T : Comparable, T : Hashable {
+        return 4 as! T
+    }
+    
     
     func numberOfViewControllers<T>(in pagingViewController: PagingViewController<T>) -> Int where T : PagingItem, T : Comparable, T : Hashable {
          return 3
@@ -18,10 +21,6 @@ class DescriptionPageViewController: UIViewController, PagingViewControllerDataS
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController where T : PagingItem, T : Comparable, T : Hashable {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "vc1") as! ProductDetailsViewController
         return vc
-    }
-    
-    func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, pagingItemForIndex index: Int) -> T where T : PagingItem, T : Comparable, T : Hashable {
-        return PagingIndexItem(index: index, title: "View \(index)") as! T
     }
     
     override func viewDidLoad() {
