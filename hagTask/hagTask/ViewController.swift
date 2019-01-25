@@ -14,10 +14,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath) as? UICollectionViewCell
-        //dequeueReusableCell(withIdentifier: "", for: indexPath) as? UICollectionViewCell
-        cell?.backgroundColor = UIColor.red
-        return cell!
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath)
+        cell.backgroundColor = UIColor.red
+        return cell
 
     }
     
@@ -26,11 +25,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? UITableViewCell
-        cell?.backgroundColor = UIColor.blue
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.backgroundColor = UIColor.blue
+        return cell
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +39,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
